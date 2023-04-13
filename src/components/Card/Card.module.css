@@ -5,6 +5,8 @@
     width: 15rem;
     height: 20rem;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .cardImg {
@@ -40,5 +42,4 @@
     font-weight: bold;
     text-decoration: none;
     color: #00275B;
-    margin-top: 1.5rem;
 }
