@@ -2,8 +2,8 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     margin: 10px;
-    width: 15rem;
-    height: 20rem;
+    width: 20rem;
+    height: 22rem;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -36,10 +36,15 @@
 
 .label {
     margin-right: .25rem;
+    white-space: nowrap;
 }
 
 .info a {
     font-weight: bold;
     text-decoration: none;
     color: #00275B;
+}
+
+.info strong {
+    word-wrap: break-word;
 }
