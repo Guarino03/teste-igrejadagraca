@@ -1,0 +1,50 @@
+.header {
+    background: var(--blue-900);  
+    display: flex;
+    justify-content: center;  
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.wrapper {
+    max-width: 960px;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 0;
+}
+
+.menu img {
+    height: 4rem;
+}
+
+.navbarItem {
+    color: white;
+    text-decoration: none;
+}
+
+.navbarItem:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.divider {
+    border: none;
+    background: #013F6D;
+    height: .1rem;
+}
+
+.pageTitle {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.pageTitle h1 {
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--white)
+}
