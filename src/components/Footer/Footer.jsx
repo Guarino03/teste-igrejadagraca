@@ -3,8 +3,8 @@ import styles from './Footer.module.css'
 
 export function Footer() {
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
       <span>{new Date().getFullYear()} - Todos os direitos reservados</span>
-    </div>
+    </footer>
   )
 }
