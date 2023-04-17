@@ -3,6 +3,7 @@ import styles from "./MainContent.module.css"
 import { Card } from '../Card/Card'
 import axios from 'axios'
 
+
 export function MainContent() {
 
   const [users, setUsers] = useState([])
@@ -22,8 +23,17 @@ export function MainContent() {
 
   return (
     <main className={styles.mainContent}>
-      <Card/>
-
+      {users.length > 0 && (
+        users.map(user => (
+          <Card
+        imagem={user.image}
+        nomeSobrenome={user.firstname + ' '+ user.lastname}
+        userName={user.username}
+        email={user.email}
+        site={user.website}
+      />
+        ))
+      )}
     </main>
   )
 }
